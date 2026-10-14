@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reachy Solutions portfolio — selected software, website, e-commerce, UI/UX, and AI projects.">
+  <meta name="theme-color" content="#051229">
+  <title>Portfolio | Reachy Solutions</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function(){try{var k='reachy-theme',t=localStorage.getItem(k);if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)t='dark';if(!t)t='light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header header--solid">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Reachy Solutions home">
+        <span class="logo-marks"><img src="assets/images/logo-mark.png" alt="" class="logo-img logo-img--dark" width="64" height="48"><img src="assets/images/logo-mark-light.png" alt="" class="logo-img logo-img--light" width="64" height="48"></span>
+        <span class="logo-wordmark"><span class="logo-name">Re<span class="logo-a">a</span>chy</span><span class="logo-sub">Solutions</span></span>
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="nav-cta"><a href="contact.html" class="btn btn-primary btn-sm">Start a Project</a></div>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Portfolio</div>
+        <h1>Selected work</h1>
+        <p>Each project is framed around a challenge, a solution, and the stack that made it viable.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="portfolio-toolbar" role="toolbar" aria-label="Filter projects">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="software" aria-pressed="false">Software</button>
+          <button class="filter-btn" type="button" data-filter="ecommerce" aria-pressed="false">E-commerce</button>
+          <button class="filter-btn" type="button" data-filter="website" aria-pressed="false">Website</button>
+          <button class="filter-btn" type="button" data-filter="ai" aria-pressed="false">AI</button>
+          <button class="filter-btn" type="button" data-filter="uiux" aria-pressed="false">UI/UX</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card fade-in" data-category="software">
+            <div class="portfolio-image"><img src="assets/images/card-software.jpg" alt="Operations dashboard on a laptop" width="640" height="360"><span class="tag">Software</span></div>
+            <div class="portfolio-body">
+              <h3>Business management platform</h3>
+              <p class="industry">Enterprise · Operations</p>
+              <p><strong>Challenge:</strong> operations, teams, and workflows lived in disconnected tools.</p>
+              <p><strong>Solution:</strong> one platform with dashboards, automation, collaboration, and live reporting.</p>
+              <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span class="tech-tag">PostgreSQL</span></div>
+            </div>
+          </article>
+
+          <article class="portfolio-card fade-in" data-category="ecommerce">
+            <div class="portfolio-image"><img src="assets/images/card-ecommerce.jpg" alt="Online store on a phone and laptop" width="640" height="360"><span class="tag">E-commerce</span></div>
+            <div class="portfolio-body">
+              <h3>Modern e-commerce store</h3>
+              <p class="industry">Retail · D2C</p>
+              <p><strong>Challenge:</strong> a growing catalog needed a store that still felt premium at checkout.</p>
+              <p><strong>Solution:</strong> sleek storefront, inventory, accounts, and an admin that keeps up.</p>
+              <div class="tech-tags"><span class="tech-tag">Next.js</span><span class="tech-tag">Stripe</span><span class="tech-tag">MongoDB</span></div>
+            </div>
+          </article>
+
+          <article class="portfolio-card fade-in" data-category="website">
+            <div class="portfolio-image"><img src="assets/images/card-website.jpg" alt="Corporate website on a laptop" width="640" height="360"><span class="tag">Website</span></div>
+            <div class="portfolio-body">
+              <h3>Corporate website redesign</h3>
+              <p class="industry">Professional services</p>
+              <p><strong>Challenge:</strong> an established firm needed a site that matched its expertise and generated leads.</p>
+              <p><strong>Solution:</strong> service pages, case studies, contact flow, and SEO-ready structure.</p>
+              <div class="tech-tags"><span class="tech-tag">HTML/CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">CMS</span></div>
+            </div>
+          </article>
+
+          <article class="portfolio-card fade-in" data-category="ai">
+            <div class="portfolio-image"><img src="assets/images/card-ai.jpg" alt="AI assistant on a desktop screen" width="640" height="360"><span class="tag">AI</span></div>
+            <div class="portfolio-body">
+              <h3>AI knowledge assistant</h3>
+              <p class="industry">Internal tools</p>
+              <p><strong>Challenge:</strong> answers were buried across scattered documents.</p>
+              <p><strong>Solution:</strong> natural-language search over the company knowledge base.</p>
+              <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">OpenAI</span><span class="tech-tag">FastAPI</span></div>
+            </div>
+          </article>
+
+          <article class="portfolio-card fade-in" data-category="uiux">
+            <div class="portfolio-image"><img src="assets/images/card-uiux.jpg" alt="Interface design on a monitor and tablet" width="640" height="360"><span class="tag">UI/UX</span></div>
+            <div class="portfolio-body">
+              <h3>SaaS dashboard UI</h3>
+              <p class="industry">Product design</p>
+              <p><strong>Challenge:</strong> dense data needed to feel readable, not overwhelming.</p>
+              <p><strong>Solution:</strong> a design system, custom charts, and a calm information hierarchy.</p>
+              <div class="tech-tags"><span class="tech-tag">Figma</span><span class="tech-tag">Design system</span><span class="tech-tag">Prototype</span></div>
+            </div>
+          </article>
+
+          <article class="portfolio-card fade-in" data-category="software">
+            <div class="portfolio-image"><img src="assets/images/card-automation.jpg" alt="Automation flow on a wide monitor" width="640" height="360"><span class="tag">Automation</span></div>
+            <div class="portfolio-body">
+              <h3>Workflow automation</h3>
+              <p class="industry">Operations</p>
+              <p><strong>Challenge:</strong> manual handoffs were slow and error-prone.</p>
+              <p><strong>Solution:</strong> automated connections between the systems the team already used.</p>
+              <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">APIs</span><span class="tech-tag">Automation</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="surface-alt">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Capabilities</span>
+          <h2>What we build</h2>
+        </div>
+        <div class="clients-grid">
+          <div class="client-card fade-in"><div class="client-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/></svg></div><h4>Operations platforms</h4><p>Unified systems for teams and workflows.</p></div>
+          <div class="client-card fade-in"><div class="client-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div><h4>Online stores</h4><p>Catalogs, checkout, and admin that stay coherent.</p></div>
+          <div class="client-card fade-in"><div class="client-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg></div><h4>Corporate sites</h4><p>Credibility, clarity, and a path to contact.</p></div>
+          <div class="client-card fade-in"><div class="client-icon"><svg viewBox="0 0 24 24"><path d="M12 2l1.8 5.5L20 9.3l-4.6 3.9L16.6 19 12 16.2 7.4 19l1.2-5.8L4 9.3l6.2-1.8L12 2z"/></svg></div><h4>AI assistants</h4><p>Search, answers, and document intelligence.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2 class="fade-in">Want this to be your next chapter?</h2>
+        <p class="fade-in">Tell us the problem. We’ll shape the product around it.</p>
+        <div class="cta-actions fade-in"><a href="contact.html" class="btn btn-primary">Start a Project</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Reachy Solutions">
+            <span class="logo-marks"><img src="assets/images/logo-mark.png" alt="" class="logo-img logo-img--dark" width="64" height="48"><img src="assets/images/logo-mark-light.png" alt="" class="logo-img logo-img--light" width="64" height="48"></span>
+            <span class="logo-wordmark"><span class="logo-name">Re<span class="logo-a">a</span>chy</span><span class="logo-sub">Solutions</span></span>
+          </a>
+          <p>Software, websites, commerce, UI/UX, and custom AI — built to last.</p>
+        </div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html#software">Software</a></li><li><a href="services.html#websites">Websites</a></li><li><a href="services.html#ecommerce">E-commerce</a></li><li><a href="services.html#uiux">UI/UX</a></li><li><a href="services.html#ai">Custom AI</a></li></ul></div>
+        <div class="footer-col"><h4>Get in touch</h4><ul><li><a href="contact.html">Start a project</a></li><li><a href="mailto:Reachysolutions@gmail.com">Reachysolutions@gmail.com</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Reachy Solutions. All rights reserved.</p>
+        <p class="tagline">Where Ideas Reach Reality.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
